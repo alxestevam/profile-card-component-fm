@@ -1,0 +1,140 @@
+:root {
+    --primary: hsl(185, 75%, 39%);
+    --dark: hsl(229, 23%, 23%);
+    --primary-grey: hsl(227, 10%, 46%);
+    --grey: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--primary);
+}
+
+a {
+    color: var(--dark);
+}
+
+.container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#bg-pattern-top {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    z-index: -100;
+}
+
+#bg-pattern-bottom {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: -100;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 375px;
+    border-radius: 13px;
+    background-color: white;
+    color: var(--grey);
+    font-size: 12px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    box-shadow: 0px 0px 100px var(--primary-grey);
+}
+
+.card-title-container {
+    margin-bottom: 15px;
+}
+
+.stats-text {
+    font-size: 18px;
+    color: var(--dark);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.thin {
+    font-weight: 400;
+    color: var(--grey);
+}
+
+.card-image {
+    height: 106px;
+    width: 106px;
+    background: white;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 25px;
+}
+
+.card-header {
+    height: 140px;
+    width: 100%;
+    height: 140px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.card-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    transform: translate(-50%, -53%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+}
+
+.card-footer-item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.attribution {
+    align-self: center;
+    font-size: 12px;
+    margin-top: 40px;
+}
